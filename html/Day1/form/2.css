@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 60%;
+    margin: auto;
+}
+.form{
+    padding: 1em;
+    background-image: linear-gradient(80deg, rgb(40, 140, 180), rgb(204, 220, 226)) ;
+    color: #fff;
+}
+form{
+    margin-top: 3em;
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: 550;
+}
+.head{
+    font-size: 1.5em;
+    font-weight: bold
+}
+.form p{
+    margin: 1em 0;
+    font-size: 0.8em;
+}
+.name, .mail, .number, .message, .msg, .verify{
+    width: 100%;
+    padding: 10px 0;
+}
+label{
+    width: 30%;
+    display: inline-block;
+}
+.name input{
+    margin: auto;
+    width: 30%;
+}
+input, select{
+    padding: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 4px;
+}
+.mail input{
+    width: 60%;
+}
+.number input{
+    width: 20%;
+    text-align: center;
+}
+.message select{
+    width: 60%;
+}
+.msg{
+    display: flex;
+}
+.msg label{
+}
+.msg textarea{
+    width: 60%;
+    padding: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 4px;
+}
+.verify{
+    margin-top: 1em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+.verify img{
+    height: 3em;
+}
+hr{
+    margin: 2em 0;
+}
+input[type="submit"]{
+    padding: 10px 1.5em;
+    background-color: transparent;
+    color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: 8px;
+}

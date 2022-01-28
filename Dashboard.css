@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #444;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{zoom: 95%;}
+
+.nav{margin-bottom: 1em;}
+
+.nav .logo{
+    padding: 10px 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+}
+.body{
+    display: flex;
+    justify-content: space-around;
+}
+.body .left{
+    width: 30%;
+}
+.left ul li{
+    cursor: pointer;
+}
+.body .right{
+    width: 65%;
+    height: 90vh;
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 #aaa;
+    overflow: scroll;
+    position: relative;
+}
+.body .right .nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+}
+.body .right .nav .nav-item{cursor: pointer;}
+.card{
+    margin-bottom: 10px;
+}
+#htmlDay2, #htmlDay3, #jsDay2, #jsDay3, #jsBody, #jqueryBody{display: none;}

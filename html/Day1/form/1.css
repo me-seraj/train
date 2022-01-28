@@ -1,0 +1,38 @@
+.head{
+    margin: 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+form{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin: 20px 0 5px 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+form input, select{
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
+    color: #666;
+}
+.gender input:last-child{
+    margin-left: 2em;
+}
+form textarea{
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    border-radius: 8px;
+}
+form input[type="submit"]{
+    margin: 1em auto 1em auto;
+    padding: 1em 3em;
+    width: fit-content;
+    background-color: rgb(38, 88, 182);
+    color: #fff;
+    font-weight: bold;
+}

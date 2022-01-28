@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+    create a html form with input fields firstname, lastname, phone, email, company
+    i) find all input box in the html form and add a class=”input” to each element
+
+    </pre>
+    
+    <!-- HTML codes -->
+    <form action="">
+        <label for="">First Name</label>
+        <input type="text" name="" id=""><br>
+
+        <label for="">Last Name</label>
+        <input type="text" name="" id=""><br>
+
+        <label for="">Phone</label>
+        <input type="tel" name="" id=""><br>
+
+        <label for="">Email</label>
+        <input type="email" name="" id=""><br>
+
+        <label for="">Company</label>
+        <input type="text" name="" id="">
+    </form>
+
+    <script>
+        var arr = document.querySelectorAll("input");
+
+        for(var i = 0; i < arr.length; i++) arr[i].classList.add("input");
+    </script>
+</body>
+</html>

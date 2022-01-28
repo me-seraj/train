@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{margin: 1em 0;}
+    </style>
+</head>
+
+<body>
+
+    <button onclick="show()">Show Button</button>
+    <div class="result"></div>
+
+
+    <script>
+        const Person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            phone: '9836493261',
+            email: 'someone@example.com',
+            handleShowButton: function () {return this.formatDisplayData()},
+            formatDisplayData: function () { 
+                return this.firstName + " " + this.lastName + ", " + this.phone + ", " + this.email;
+            }
+        }
+
+        function show(){
+            document.querySelector(".result").textContent = Person.handleShowButton();
+        }
+    </script>
+</body>
+
+</html>

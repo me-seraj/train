@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Write a JavaScript function to insert a string within a string at a particular position (default is 1).
+        Test Data :
+            console.log(insert('We are doing some exercises.'));
+            console.log(insert('We are doing some exercises.','JavaScript '));
+            console.log(insert('We are doing some exercises.','JavaScript ',18));
+            "We are doing some exercises."
+            "JavaScript We are doing some exercises."
+            "We are doing some JavaScript exercises."
+    </pre>
+
+
+    <script>
+        var string = "";
+        function insert(a, b, n) {
+            if (b == undefined && n == undefined) console.log((string += " " + a));
+            else if(n == undefined) console.log(string += b + " " + a);
+            else console.log(string += a.slice(0, n) + " " + b + " " + a.slice(n));
+        }
+    </script>
+</body>
+
+</html>

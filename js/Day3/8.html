@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{height: 2em; margin: 10px 0;}
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+    <script>
+        var arr = document.querySelectorAll("div");
+
+        for(var i = 0; i < arr.length; i++){
+            if(i % 2 == 0) arr[i].style.backgroundColor = "blue";
+            else arr[i].style.backgroundColor = "green";
+        }
+
+        document.querySelectorAll("div").forEach(e => {
+            var oldColor = e.style.backgroundColor;
+
+            e.addEventListener("mouseover", () => {
+                e.style.backgroundColor = "yellow";
+            });
+            e.addEventListener("mouseout", () => {
+                e.style.backgroundColor = oldColor;
+            });
+        });
+        
+    </script>
+</body>
+</html>

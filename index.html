@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="Dashboard.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">serajWorkspace</div>
+    </div>
+    <div class="body">
+        <div class="left">
+            <ul class="list-group">
+                <li class="list-group-item active" id="html">HTML</li>
+                <li class="list-group-item" id="js">JavaScript</li>
+                <li class="list-group-item" id="jquery">jQuery</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div id="htmlBody">
+                <ul class="nav nav-tabs nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" call="htmlDay1">Day - 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" call="htmlDay2">Day - 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" call="htmlDay3">Day - 3</a>
+                    </li>
+                </ul>
+
+                <div id="accordion">
+                    <div id="htmlDay1">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    Div
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day1/Div/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                    <a href="html/Day1/Div/2.html" target="_blank"
+                                        class="list-group-item list-group-item-action">2</a>
+                                    <a href="html/Day1/Div/3.html" target="_blank"
+                                        class="list-group-item list-group-item-action">3</a>
+                                    <a href="html/Day1/Div/4.html" target="_blank"
+                                        class="list-group-item list-group-item-action">4</a>
+                                    <a href="html/Day1/Div/5.html" target="_blank"
+                                        class="list-group-item list-group-item-action">5</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    Form
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day1/form/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                    <a href="html/Day1/form/2.html" target="_blank"
+                                        class="list-group-item list-group-item-action">2</a>
+                                    <a href="html/Day1/form/3.html" target="_blank"
+                                        class="list-group-item list-group-item-action">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    Image
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day1/image/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                    <a href="html/Day1/image/2.html" target="_blank"
+                                        class="list-group-item list-group-item-action">2</a>
+                                    <a href="html/Day1/image/3.html" target="_blank"
+                                        class="list-group-item list-group-item-action">3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                                    Resume
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day1/resume/resume.html" target="_blank"
+                                        class="list-group-item list-group-item-action">Resume</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                    Table
+                                </a>
+                            </div>
+                            <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day1/table/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                    <a href="html/Day1/table/2.html" target="_blank"
+                                        class="list-group-item list-group-item-action">2</a>
+                                    <a href="html/Day1/table/3.html" target="_blank"
+                                        class="list-group-item list-group-item-action">3</a>
+                                    <a href="html/Day1/table/4.html" target="_blank"
+                                        class="list-group-item list-group-item-action">4</a>
+                                    <a href="html/Day1/table/5.html" target="_blank"
+                                        class="list-group-item list-group-item-action">5</a>
+                                    <a href="html/Day1/table/index.html" target="_blank"
+                                        class="list-group-item list-group-item-action">Index</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="htmlDay2">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    HTML 5
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day2/html5/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    input-type
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day2/input-type/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    Position
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day2/position/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                    <a href="html/Day2/position/2.html" target="_blank"
+                                        class="list-group-item list-group-item-action">2</a>
+                                    <a href="html/Day2/position/3.html" target="_blank"
+                                        class="list-group-item list-group-item-action">3</a>
+                                    <a href="html/Day2/position/4.html" target="_blank"
+                                        class="list-group-item list-group-item-action">4</a>
+                                    <a href="html/Day2/position/5.html" target="_blank"
+                                        class="list-group-item list-group-item-action">5</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                                    Wrap-img
+                                </a>
+                            </div>
+                            <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                <div class="list-group">
+                                    <a href="html/Day2/wrap-img/1.html" target="_blank"
+                                        class="list-group-item list-group-item-action">1</a>
+                                    <a href="html/Day2/wrap-img/2.html" target="_blank"
+                                        class="list-group-item list-group-item-action">2</a>
+                                    <a href="html/Day2/wrap-img/3.html" target="_blank"
+                                        class="list-group-item list-group-item-action">3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="htmlDay3">
+                        <div class="card">
+                            <div class="list-group">
+                                <a href="html/Day3/1.html" target="_blank"
+                                    class="list-group-item list-group-item-action">1</a>
+                                <a href="html/Day3/2.html" target="_blank"
+                                    class="list-group-item list-group-item-action">2</a>
+                                <a href="html/Day3/3.html" target="_blank"
+                                    class="list-group-item list-group-item-action">3</a>
+                                <a href="html/Day3/4.html" target="_blank"
+                                    class="list-group-item list-group-item-action">4</a>
+                                <a href="html/Day3/5.html" target="_blank"
+                                    class="list-group-item list-group-item-action">5</a>
+                                <a href="html/Day3/6.html" target="_blank"
+                                    class="list-group-item list-group-item-action">6</a>
+                                <a href="html/Day3/7.html" target="_blank"
+                                    class="list-group-item list-group-item-action">7</a>
+                                <a href="html/Day3/8.html" target="_blank"
+                                    class="list-group-item list-group-item-action">8</a>
+                                <a href="#" target="_blank"
+                                    class="list-group-item list-group-item-action disabled">9</a>
+                                <a href="#" target="_blank"
+                                    class="list-group-item list-group-item-action disabled">10</a>
+                                <a href="#" target="_blank"
+                                    class="list-group-item list-group-item-action disabled">11</a>
+                                <a href="#" target="_blank"
+                                    class="list-group-item list-group-item-action disabled">12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- js works -->
+            <div id="jsBody">
+                <ul class="nav nav-tabs nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" call="jsDay1">Day - 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" call="jsDay2">Day - 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" call="jsDay3">Day - 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" call="extra">Extra</a>
+                    </li>
+                </ul>
+
+                <div id="accordion">
+                    <div id="jsDay1">
+                        <div class="card">
+                            <div class="list-group">
+                                <a href="js/Day1/1.html" target="_blank"
+                                    class="list-group-item list-group-item-action">1</a>
+                                <a href="js/Day1/2.html" target="_blank"
+                                    class="list-group-item list-group-item-action">2</a>
+                                <a href="js/Day1/3.html" target="_blank"
+                                    class="list-group-item list-group-item-action">3</a>
+                                <a href="js/Day1/4.html" target="_blank"
+                                    class="list-group-item list-group-item-action">4</a>
+                                <a href="js/Day1/5.html" target="_blank"
+                                    class="list-group-item list-group-item-action">5</a>
+                                <a href="js/Day1/6.html" target="_blank"
+                                    class="list-group-item list-group-item-action">6</a>
+                                <a href="js/Day1/7.html" target="_blank"
+                                    class="list-group-item list-group-item-action">7</a>
+                                <a href="js/Day1/8.html" target="_blank"
+                                    class="list-group-item list-group-item-action">8</a>
+                                <a href="js/Day1/9.html" target="_blank"
+                                    class="list-group-item list-group-item-action">9</a>
+                                <a href="js/Day1/10.html" target="_blank"
+                                    class="list-group-item list-group-item-action">10</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="jsDay2">
+                        <div class="list-group">
+                            <a href="js/Day2/1.html" target="_blank"
+                                class="list-group-item list-group-item-action">1</a>
+                            <a href="js/Day2/2.html" target="_blank"
+                                class="list-group-item list-group-item-action">2</a>
+                            <a href="js/Day2/3.html" target="_blank"
+                                class="list-group-item list-group-item-action">3</a>
+                            <a href="js/Day2/4.html" target="_blank"
+                                class="list-group-item list-group-item-action">4</a>
+                            <a href="js/Day2/5.html" target="_blank"
+                                class="list-group-item list-group-item-action">5</a>
+                            <a href="js/Day2/6.html" target="_blank"
+                                class="list-group-item list-group-item-action">6</a>
+                            <a href="js/Day2/7.html" target="_blank"
+                                class="list-group-item list-group-item-action">7</a>
+                            <a href="js/Day2/8.html" target="_blank"
+                                class="list-group-item list-group-item-action">8</a>
+                            <a href="js/Day2/9.html" target="_blank"
+                                class="list-group-item list-group-item-action">9</a>
+                            <a href="js/Day2/10.html" target="_blank"
+                                class="list-group-item list-group-item-action">10</a>
+                            <a href="js/Day2/11.html" target="_blank"
+                                class="list-group-item list-group-item-action">11</a>
+                            <a href="js/Day2/12.html" target="_blank"
+                                class="list-group-item list-group-item-action">12</a>
+                            <a href="js/Day2/13.html" target="_blank"
+                                class="list-group-item list-group-item-action">13</a>
+                            <a href="js/Day2/14.html" target="_blank"
+                                class="list-group-item list-group-item-action">14</a>
+                            <a href="js/Day2/15.html" target="_blank"
+                                class="list-group-item list-group-item-action">15</a>
+                            <a href="js/Day2/16.html" target="_blank"
+                                class="list-group-item list-group-item-action">16</a>
+                            <a href="js/Day2/17.html" target="_blank"
+                                class="list-group-item list-group-item-action">17</a>
+                            <a href="js/Day2/18.html" target="_blank"
+                                class="list-group-item list-group-item-action">18</a>
+                            <a href="js/Day2/19.html" target="_blank"
+                                class="list-group-item list-group-item-action">19</a>
+                            <a href="js/Day2/20.html" target="_blank"
+                                class="list-group-item list-group-item-action">20</a>
+                            <a href="js/Day2/21.html" target="_blank"
+                                class="list-group-item list-group-item-action">21</a>
+                        </div>
+                    </div>
+
+                    <div id="jsDay3">
+                        <div class="card">
+                            <div class="list-group">
+                                <a href="js/Day3/1.html" target="_blank"
+                                    class="list-group-item list-group-item-action">1</a>
+                                <a href="js/Day3/2.html" target="_blank"
+                                    class="list-group-item list-group-item-action">2</a>
+                                <a href="js/Day3/3.html" target="_blank"
+                                    class="list-group-item list-group-item-action">3</a>
+                                <a href="js/Day3/4.html" target="_blank"
+                                    class="list-group-item list-group-item-action">4</a>
+                                <a href="js/Day3/5.html" target="_blank"
+                                    class="list-group-item list-group-item-action">5</a>
+                                <a href="js/Day3/6.html" target="_blank"
+                                    class="list-group-item list-group-item-action">6</a>
+                                <a href="js/Day3/7.html" target="_blank"
+                                    class="list-group-item list-group-item-action">7</a>
+                                <a href="js/Day3/8.html" target="_blank"
+                                    class="list-group-item list-group-item-action">8</a>
+                                <a href="js/Day3/9.html" target="_blank"
+                                    class="list-group-item list-group-item-action">9</a>
+                                <a href="js/Day3/10.html" target="_blank"
+                                    class="list-group-item list-group-item-action">10</a>
+                                <a href="js/Day3/11.html" target="_blank"
+                                    class="list-group-item list-group-item-action">11</a>
+                                <a href="js/Day3/12.html" target="_blank"
+                                    class="list-group-item list-group-item-action">12</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="extra">
+                        <div class="card">
+                            <div class="list-group">
+                                <a href="js/scroll.html" target="_blank"
+                                    class="list-group-item list-group-item-action">Scroll to Top</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- jquery works -->
+            <div id="jqueryBody">
+                <ul class="nav nav-tabs nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" call="All">All</a>
+                    </li>
+                </ul>
+
+                <div id="accordion">
+                    <div id="All">
+                        <div class="card">
+                            <div class="list-group">
+                                <a href="jquery/22.html" target="_blank"
+                                    class="list-group-item list-group-item-action">22</a>
+                                <a href="jquery/23.html" target="_blank"
+                                    class="list-group-item list-group-item-action">23</a>
+                                <a href="jquery/24.html" target="_blank"
+                                    class="list-group-item list-group-item-action">24</a>
+                                <a href="jquery/25.html" target="_blank"
+                                    class="list-group-item list-group-item-action">25</a>
+                                <a href="jquery/26.html" target="_blank"
+                                    class="list-group-item list-group-item-action">26</a>
+                                <a href="jquery/27.html" target="_blank"
+                                    class="list-group-item list-group-item-action">27</a>
+                                <a href="jquery/28.html" target="_blank"
+                                    class="list-group-item list-group-item-action">28</a>
+                                <a href="jquery/29.html" target="_blank"
+                                    class="list-group-item list-group-item-action">29</a>
+                                <a href="jquery/30.html" target="_blank"
+                                    class="list-group-item list-group-item-action">30</a>
+                                <a href="jquery/32.html" target="_blank"
+                                    class="list-group-item list-group-item-action">32</a>
+                                <a href="jquery/33.html" target="_blank"
+                                    class="list-group-item list-group-item-action">33</a>
+                                <a href="jquery/34.html" target="_blank"
+                                    class="list-group-item list-group-item-action">34</a>
+                                <a href="jquery/35.html" target="_blank"
+                                    class="list-group-item list-group-item-action">35</a>
+                                <a href="jquery/36.html" target="_blank"
+                                    class="list-group-item list-group-item-action">36</a>
+                                <a href="jquery/37.html" target="_blank"
+                                    class="list-group-item list-group-item-action">37</a>
+                                <a href="jquery/38.html" target="_blank"
+                                    class="list-group-item list-group-item-action">38</a>
+                                <a href="jquery/39.html" target="_blank"
+                                    class="list-group-item list-group-item-action">39</a>
+                                <a href="jquery/40.html" target="_blank"
+                                    class="list-group-item list-group-item-action">40</a>
+                                <a href="jquery/clone.html" target="_blank"
+                                    class="list-group-item list-group-item-action">Clone</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Dashboard.js"></script>
+</body>
+
+</html>

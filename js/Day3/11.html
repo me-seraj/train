@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        input, select{width: 30%; padding: 5px; outline: none; border: 1px solid rgb(0, 132, 255); border-radius: 4px;}
+        #add{margin: 1em 0 2em 0; padding: 10px 2em; background-color: rgb(0, 132, 255); width: fit-content; color: #fff; font-weight: bold; border-radius: 8px; cursor: pointer; user-select: none;}
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="" id="items">
+    <div id="add">Add</div>
+    <select name="" id=""></select>
+
+
+
+    <script>
+        document.querySelector("#add").addEventListener("click", () => {
+            document.querySelector("select")
+                .innerHTML += "<option>" + document.querySelector("#items").value + "</option>";
+
+            document.querySelector("#items").value = "";
+        });
+    </script>
+</body>
+
+</html>

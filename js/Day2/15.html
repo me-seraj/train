@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+    make the string in reverse order
+    Eg. We will win the world cup.
+        Reverse1 .puc dlrow eht niw lliw ew
+        Reverse2. cup. World the win will We
+
+    </pre>
+    <script>
+        var str = prompt("Enter any string ??");
+
+        var rev1 = "";
+        // for reverse 1
+        for(var i = str.length - 1; i >= 0; i--) rev1 += str.charAt(i);
+
+        // for reverse 2
+        var rev2 = "";
+        var arr = str.split(" ");
+        for(var i = arr.length - 1; i >= 0; i--) rev2 += arr[i] + " ";
+
+        console.log("Reverse.1 : " + rev1);
+        console.log("Reverse.2 : " + rev2);
+    </script>
+</body>
+</html>

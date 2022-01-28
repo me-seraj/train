@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    width: 70%;
+    margin: 1em auto;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(135, 180, 158, 0.356);
+    padding: 1em;
+}
+.input .head{
+    color: red;
+    font-weight: bold;
+}
+.input label{
+    margin-top: 1em;
+    padding: 2px 0;
+    color: #444;
+}
+.input input{
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+input[type="color"]{
+    width: 100%;
+}
+input[type="file"]{
+    border: none;
+}
+input[type="submit"]{
+    width: fit-content;
+    padding: 5px 1em;
+}

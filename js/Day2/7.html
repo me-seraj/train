@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre>
+        Write a JavaScript function to hide email addresses to protect from unauthorized user
+        Test Data :
+        console.log(protect_email("robin_singh@example.com"));
+        "robin...@example.com"
+    </pre>
+
+
+</body>
+</html>
+    <script>
+        function protect(email){
+            var id = email.split("@")[0];
+            var pmail = id.substring(0, id.length / 2);
+
+            for(var i = id.length / 2; i < id.length; i++) pmail += "*";
+            confirm(email.replace(id, pmail));
+        }
+        protect(prompt("Enter any email ??"));
+    </script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, button, label, .result{padding: 10px; font-weight: bold;}
+        .result{color: #666; margin: 1em 0; border: 0.5px dotted #aaa; width: fit-content;}
+    </style>
+</head>
+<body>
+    <label for="">Enter Array</label>
+    <input type="text" name="" id="input" placeholder="E.g. 4, 43, 34, 21, 12, 67">
+    <button onclick="sort()">Sort Array</button>
+
+    <div class="result">Result will shows here...</div>
+
+
+    <script>
+        function sort(){
+            var input = document.querySelector("#input").value;
+
+            var arr = input.split(", ");
+            arr = arr.map(Number);
+
+            for(var i = 1; i < arr.length; i++){
+                var key = arr[i];
+                var j = i - 1;
+
+                while(j >= 0 && arr[j] > key){
+                    arr[j+1] = arr[j];
+                    j--;
+                }
+                arr[j+1] = key;
+            }
+
+            document.querySelector(".result").textContent = arr.join(", ");
+            document.querySelector(".result").style.color = "#000";
+        }
+    </script>
+</body>
+</html>

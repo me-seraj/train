@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --second: 0.01s;
+    --minute: calc(var(--second) * 60);
+    --hour: calc(var(--minute) * 60);
+}
+@keyframes rotate {
+    from { transform: rotate(0); }
+    to { transform: rotate(1turn); }
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .wall{
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.44);    
+    position: relative;
+}
+.number{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: relative;
+}
+.number div{
+    font: Monaco, MonoSpace;
+    height: 50%;
+    position: absolute;
+    left: calc(50% - 0.4em);
+    top: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1;
+    transform-origin: bottom center;
+}
+.center{
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    background-color: #444;
+    box-shadow: 0 0 8px 0 #fff;
+}
+.char1 { transform: rotate(30deg); }
+.char2 { transform: rotate(60deg); }
+.char3 { transform: rotate(90deg); }
+.char4 { transform: rotate(120deg); }
+.char5 { transform: rotate(150deg); }
+.char6 { transform: rotate(180deg); }
+.char7 { transform: rotate(210deg); }
+.char8 { transform: rotate(240deg); }
+.char9 { transform: rotate(270deg); }
+.char10 { transform: rotate(300deg); }
+.char11 { transform: rotate(330deg); }
+.char12 { transform: rotate(360deg); }
+
+.hand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #aaa;
+    transform-origin: top left;
+}
+
+.second.hand {
+    width: 40%;
+    z-index: 22;
+    box-shadow: 0 0 2px 1px #fff;
+    animation: rotate steps(60) var(--minute) infinite;
+}
+.minute.hand {
+    width: 35%;
+    z-index: 21;
+    height: 2px;
+    background-color: rgb(29, 226, 226);
+    animation: rotate linear var(--hour) infinite;
+}
+.hour.hand {
+    width: 30%;
+    z-index: 20;
+    height: 4px;
+    background-color: #000;
+    animation: rotate linear calc(var(--hour) * 12) infinite;
+}

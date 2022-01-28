@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        Write a JavaScript function to create a case-insensitive search.
+        Test Data :
+        console.log(case_insensitive_search('JavaScript Exercises', 'exercises'));
+        "Matched"
+        console.log(case_insensitive_search('JavaScript Exercises', 'Exercises'));
+        "Matched"
+        console.log(case_insensitive_search('JavaScript Exercises', 'Exercisess'));
+        "Not Matched"
+    </pre>
+
+    <script>
+        function case_insensitive_search(text, key){
+            text = text.toLowerCase();
+            key = key.toLowerCase();
+
+            if(text.search(key) == -1) console.log("Not matched");
+            else console.log("Matched");
+        }
+    </script>
+</body>
+</html>

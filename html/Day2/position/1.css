@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.left{
+    width: 80%;
+    padding: 2em;
+    position: relative;
+}
+.left p{
+    text-align: justify;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: fantasy;
+    font-weight: lighter;
+}
+.left .orange{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(241, 111, 50, 0.842);
+}
+.left .head{
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.sky{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(29, 164, 218);
+    position: absolute;
+    right: 0;
+    top: 0;
+}

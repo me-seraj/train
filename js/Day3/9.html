@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: green;
+            width: 60%;
+        }
+
+        .result {
+            background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <label for="">Birthday :
+            <!-- <select name="" id="month">
+        <option value="" selected>January</option>
+        <option value="">February</option>
+        <option value="">March</option>
+        <option value="">April</option>
+        <option value="">May</option>
+        <option value="">June</option>
+        <option value="">July</option>
+        <option value="">August</option>
+        <option value="">September</option>
+        <option value="">October</option>
+        <option value="">November</option>
+        <option value="">December</option>
+    </select>
+
+    <select name="" id="day">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        <option value="">9</option>
+        <option value="">10</option>
+        <option value="">11</option>
+        <option value="">12</option>
+        <option value="">13</option>
+        <option value="">14</option>
+        <option value="">15</option>
+        <option value="">16</option>
+        <option value="">17</option>
+        <option value="">18</option>
+        <option value="">19</option>
+        <option value="">20</option>
+        <option value="">21</option></label>
+        <option value="">22</option>
+        <option value="">23</option>
+        <option value="">24</option>
+        <option value="">25</option>
+        <option value="">26</option>
+        <option value="">27</option>
+        <option value="">28</option>
+        <option value="">29</option>
+        <option value="">30</option>
+        <option value="">31</option>
+    </select> -->
+            <input type="date" name="" id="date">
+        </label>
+        <button onclick="calc()">Calculate</button>
+        <div class="result">
+            <p>You are <span class="year"></span> years old ...</p>
+            <br>
+            <p>or <span class="months"></span> months old</p>
+            <p>or <span class="weeks"></span> weeks old</p>
+            <p>or <span class="days"></span> days old</p>
+            <p>or <span class="hours"></span> hours old</p>
+            <p>or <span class="minutes"></span> minutes old</p>
+            <p>or <span class="seconds"></span> seconds old</p>
+
+            <br>
+
+            <p>And, your next birthday is in : <span class="nextDay"></span> days <span class="nextHours"></span> hrs
+                <span class="nextMins"></span> mins <span class="nextSecs"></span> secs
+            </p>
+
+        </div>
+    </div>
+
+
+    <script>
+        function calc() {
+            setInterval(() => {
+                var birth = document.querySelector("#date").value;
+                birth = new Date(birth);
+                var curr = new Date();
+
+                var secs = Math.round((curr - birth) / 1000);
+                var mins = Math.round(secs / 60);
+                var hours = Math.round(mins / 60);
+                var days = Math.round(hours / 24);
+                var weeks = Math.round(days / 7)
+                var months = Math.round(days / 30);
+                var years = Math.round(months / 12);
+
+                // future d.o.b.
+                var f_secs;
+                var f_mins;
+                var f_hours;
+                var f_days;
+
+                if (birth.getDate() < curr.getDate()) {
+                    birth.setFullYear(curr.getFullYear() + 1);
+
+                    f_days = Math.round((birth -= curr) / (1000 * 60 * 60 * 24));
+                    f_hours = Math.round((birth - f_days * 1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+                    f_mins = Math.round((birth - f_days * 1000 * 60 * 60 * 24 - f_hours * 1000 * 60 * 60) / (1000 * 60));
+                    f_secs = Math.round((birth - f_days * 1000 * 60 * 60 * 24 - f_hours * 1000 * 60 * 60 - f_mins * 1000 * 60) / (1000));
+                }
+                else {
+                    birth.setFullYear(curr.getFullYear());
+
+                    f_days = Math.round((birth -= curr) / (1000 * 60 * 60 * 24));
+                    f_hours = Math.round((birth - f_days * 1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+                    f_mins = Math.round((birth - f_days * 1000 * 60 * 60 * 24 - f_hours * 1000 * 60 * 60) / (1000 * 60));
+                    f_secs = Math.round((birth - f_days * 1000 * 60 * 60 * 24 - f_hours * 1000 * 60 * 60 - f_mins * 1000 * 60) / (1000));
+                }
+
+
+
+                document.querySelector(".year").textContent = years;
+
+                document.querySelector(".months").textContent = months;
+
+                document.querySelector(".weeks").textContent = weeks;
+
+                document.querySelector(".days").textContent = days;
+
+                document.querySelector(".hours").textContent = hours;
+
+                document.querySelector(".minutes").textContent = mins;
+
+                document.querySelector(".seconds").textContent = secs;
+
+                // future
+                document.querySelector(".nextDay").textContent = f_days;
+                document.querySelector(".nextHours").textContent = f_hours;
+                document.querySelector(".nextMins").textContent = f_mins;
+                document.querySelector(".nextSecs").textContent = f_secs;
+
+            })
+
+        }
+    </script>
+</body>
+
+</html>

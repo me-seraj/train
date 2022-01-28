@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="result"></div>
+    <script>
+        var library = [
+       { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254},
+       { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264},
+       { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245}
+        ];
+
+        // calling the function
+        arrObj(library);
+
+        function arrObj(arr){
+            for(var i = 1; i < arr.length; i++){
+                var key = arr[i];
+                var j = i - 1;
+
+                while(j >= 0 && arr[j].title > key.title){
+                    arr[j + 1] = arr[j];
+                    j--;
+                }
+                arr[j + 1] = key;
+            }
+// alert(arr)
+            document.querySelector(".result").textContent = arr.map((el) => {
+                return (JSON.stringify(el));
+            }); /* arr.join("\n"); */
+        }
+    </script>
+</body>
+</html>

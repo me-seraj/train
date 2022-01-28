@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <p>
+        Write a JavaScript function to truncate a string if it is longer than the specified number of characters. Truncated strings will end with a translatable ellipsis sequence ("…") (by default) or specified characters.
+        
+        Test Data :
+        console.log(text_truncate('We are doing JS string exercises.'))
+        console.log(text_truncate('We are doing JS string exercises.',19))
+        console.log(text_truncate('We are doing JS string exercises.',15,'!!'))
+        "We are doing JS string exercises."
+        "We are doing JS ..."
+        "We are doing !!"
+    </p>
+<body>
+    <script>
+        function text_truncate(a, n, b) {
+            if (b == undefined && n == undefined) console.log((a));
+            else if(b == undefined) console.log(a.substring(0, n - 3) + "...");
+            else console.log(a.substring(0, n - b.length) + b);
+        }
+    </script>
+</body>
+
+</html>

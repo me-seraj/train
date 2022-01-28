@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Write a function to handle divisiblel by 0 condition using try catch block and perform division operation on two numbers</p>
+</body>
+</html>
+<script>
+    var a = parseInt(prompt("Enter value of a >"));
+    var b = parseInt(prompt("Enter value of b >"));
+
+    
+    try{
+        if(b == 0) throw "divisible by 0 exception";
+        console.log("result = " + (a / b));
+    }
+    catch(exc){
+        console.log(exc);
+    }
+</script>

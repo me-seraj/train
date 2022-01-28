@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre>
+        create a html page and accept any url from the user and open the new window for the given url and close it after 10 seconds.
+    </pre>
+
+    <script>
+        var url = prompt("Enter any URL : ");
+
+        var urlWin = window.open(url);
+
+        setTimeout(() => {
+            urlWin.close();
+        }, 4000)
+    </script>
+</body>
+</html>

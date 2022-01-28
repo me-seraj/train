@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(123, 238, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    margin-top: 3em;
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 30%;
+    text-align: center;
+    color: #444;
+}
+.share{
+    position: absolute;
+    bottom: 4em;
+    right: 2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 48, 112);
+    cursor: pointer;
+}

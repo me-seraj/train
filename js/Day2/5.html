@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .timer{
+            padding: 1em 2em;
+            border: 2px solid #aaa;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.5em;
+            width: fit-content;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer"></div>
+
+    <script>
+        var time = parseInt(prompt("Enter time ??"));
+        var div = document.querySelector(".timer");
+        div.textContent = time;
+
+        var myInterval = setInterval(() => {
+            div.textContent--;
+            var per = ((time - div.textContent) / time) * 100;
+
+            if(per <= 50) div.style.backgroundColor = "green";
+
+            else if(per <= 70) {div.style.backgroundColor = "yellow";
+                div.style.color = "#444";}
+
+            else if(per <= 80) div.style.backgroundColor = "orange";
+
+            else div.style.backgroundColor = "red";
+
+            
+            if(div.textContent == 0) clearInterval(myInterval);
+        }, 1000);
+    </script>
+</body>
+</html>

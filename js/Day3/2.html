@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .result{
+            padding: 1em 2em;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="x1">
+
+    <select name="" id="operator">
+        <option value="">+</option>
+        <option value="">-</option>
+        <option value="">*</option>
+        <option value="">/</option>
+    </select>
+
+    <input type="text" name="" id="x2">
+
+    <button onclick="calc()">Submit</button>
+
+    <div class="result"></div>
+
+
+    <script>
+        function calc(){
+            var x1 = parseFloat(document.querySelector("#x1").value);
+            var x2 = parseFloat(document.querySelector("#x2").value);
+            var op = document.querySelector("#operator");
+            var operator = op.options[op.selectedIndex].text;
+
+            var result = document.querySelector(".result");
+            if(operator == "+") result.textContent = (x1 + x2);
+            else if(operator == "-") result.textContent = (x1 - x2);
+            else if(operator == "*") result.textContent = (x1 * x2);
+            else if(operator == "/") result.textContent = (x1 / x2);
+            else alert("Select valid operator !");
+        }
+    </script>
+</body>
+</html>

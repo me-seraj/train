@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{display: none;}
+    </style>
+</head>
+<body>
+    <label for="">First Name</label>
+    <input type="text" id="fname"><br>
+
+    <label for="">Last Name</label>
+    <input type="text" id="lname"><br>
+
+    <label for="">Phone</label>
+    <input type="tel" id="phone"><br>
+
+    <label for="">Email</label>
+    <input type="email" id="email"><br>
+
+    <label for="">Company</label>
+    <input type="text" id="company"><br>
+
+    <button onclick="submit()">Submit</button>
+
+    <ul>
+        <li id="li_fname"></li>
+        <li id="li_lname"></li>
+        <li id="li_phone"></li>
+        <li id="li_email"></li>
+        <li id="li_company"></li>
+    </ul>
+
+    <script>
+        function submit(){
+            debugger;
+            var fname = document.querySelector("#fname");
+            var lname = document.querySelector("#lname");
+            var phone = document.querySelector("#phone");
+            var email = document.querySelector("#email");
+            var company = document.querySelector("#company");
+
+            var std = {
+                fname : fname.value,
+                lname : lname.value,
+                phone : phone.value,
+                email : email.value,
+                company : company.value,
+            };
+
+            document.querySelector("#li_fname").textContent = std.fname;            
+            document.querySelector("#li_lname").textContent = std.lname;            
+            document.querySelector("#li_phone").textContent = std.phone;            
+            document.querySelector("#li_email").textContent = std.email;
+            document.querySelector("#li_company").textContent = std.company;
+
+            document.querySelector("ul").style.display = "block";
+        }
+    </script>
+</body>
+</html>

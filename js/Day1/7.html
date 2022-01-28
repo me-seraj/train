@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Write a function that accepts a number and print console log for that number in a loop. E.G. if i give 10 as input console log will print 1 to 10 numbers</p>
+</body>
+</html>
+<script>
+    function myFun(a){
+        var i = 1;
+        while(i <= a){
+            console.log(i);
+            i++;
+        }
+    }
+    var a = parseInt(prompt("Enter any number : "));
+    myFun(a);
+</script>
