@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+.carousel{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ddd;
+}
+.carousel-cell{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: inset 0 0 12px 2px #ddd;
+}
+#home h3{
+    margin: 2em 0 10px 0;
+    color: rgba(137, 43, 226, 0.8);
+    /* text-shadow: 0 0 10px #000, 2px 2px 10px #000, -2px -2px 10px #000; */
+}
+#home p{
+    margin: 10px 0;
+    font-size: 0.8em;
+    color: rgba(137, 43, 226, 0.8);
+    text-align: justify;
+    /* text-shadow: 0 0 10px #000, 2px 2px 10px #000, -2px -2px 10px #000; */
+}
+#contact, #feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 1em 2em;
+    box-shadow: 0 0 12px 2px #ddd;
+    color: rgba(137, 43, 226, 0.8);
+    text-shadow: 1px 1px 8px #aaa, -1px -1px 8px #aaa;
+    border-radius: 8px;
+}
+::placeholder{
+    color: #666;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+form .head{
+    font-size: 2em;
+}
+form p{
+    width: 100%;    
+}
+form p input, textarea, select{
+    padding: 10px;
+    margin: 1em 0;
+    color: rgba(137, 43, 226, 0.8);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 12px 2px #ddd;
+}
+textarea, #address, select{width: 100%;}
+#submit{
+    padding: 10px 2em;
+    color: #fff;
+    background-color: rgba(137, 43, 226, 0.8);
+    box-shadow: 0 0 12px 2px #aaa;
+}
+#feedback input{
+    width: 100%;
+}
+#feedback .val{
+    padding: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #444;
+}

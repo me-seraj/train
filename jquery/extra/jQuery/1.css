@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game{
+    margin: auto;
+    width: 99%;
+    min-height: 100vh;
+}
+.game .letter{
+    position: absolute;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #fff;
+    background-color: blue;
+    cursor: crosshair;
+}
+.ins{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.ins .content{
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+    background-color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content p{
+    text-align: center;
+}
+.ins .content .cross{
+    margin: 0 10px 0 20px;
+    height: 3px;
+    width: 14px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.ins .content .cross::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 14px;
+    background-color: #fff;
+    transform: rotate(-90deg);
+}
