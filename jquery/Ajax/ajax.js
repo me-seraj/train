@@ -17,7 +17,12 @@ $(document).ready(() => {
         "UP":["Hyd", "Lucknow", "Ghaziabad"]
     };
 
-
+    // $.ajax({
+    //     url: "country.json",
+    //     success: (data){
+    //         alert();
+    //     }
+    // })
 
     var options = '<option value="" selected disabled>Select any State</option>';
 
