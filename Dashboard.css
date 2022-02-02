@@ -48,4 +48,4 @@ body{zoom: 95%;}
 .card{
     margin-bottom: 10px;
 }
-#htmlDay2, #htmlDay3, #jsDay2, #jsDay3, #jsBody, #jqueryBody{display: none;}
+#htmlDay2, #htmlDay3, #jsDay2, #jsDay3, #jsBody, #jqueryBody, #ajax, #extra-jquery{display: none;}

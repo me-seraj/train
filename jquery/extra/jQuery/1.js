@@ -11,7 +11,7 @@ $(() => {
         $(".game").append('<div class="letter key' + randKey.charCodeAt(0) + '" style="top: ' + randWidth +'px; left: ' + randHeight + 'px;">' + randKey + '</div>');
         
         $(".letter").draggable();
-    }, 2000)
+    }, 800)
     
     $(window).bind("keypress", (e) => {
         if($(".key" + e.which)[0]){
