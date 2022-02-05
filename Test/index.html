@@ -31,7 +31,7 @@
 
 <body>
     <div class="container">
-        <form action="">
+        <form>
             <div class="form-group">
                 <small id="helpId" class="form-text text-muted">First Name</small>
                 <input type="text" class="form-control" name="firstname" id="firstname" aria-describedby="helpId"
@@ -58,8 +58,9 @@
 
             <div class="form-group">
                 <small id="helpId" class="form-text text-muted">Gender</small>
-                <input type="radio" name="gender" id="male"><label for="male">Male</label>
-                <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                <label for="gender" class="error" style="display:none; text-align: right;"></label>
             </div>
 
             <!-- country selectbox using select2 plugins -->
@@ -365,7 +366,7 @@
                 <small id="helpId" class="form-text text-muted">City</small>
                 <select class="form-control" name="city" id="city">
                     <option selected disabled>Select your city</option>
-                    <option></option>
+                    <option>Ahmedabad</option>
                     <option></option>
                 </select>
             </div>
@@ -382,7 +383,7 @@
                 <small id="helpId" class="form-text text-muted">College</small>
                 <select class="form-control" name="college" id="college">
                     <option selected disabled>Select your college</option>
-                    <option></option>
+                    <option>CIST Bhopal</option>
                     <option></option>
                 </select>
             </div>
@@ -391,8 +392,8 @@
             <div class="form-group">
                 <small id="helpId" class="form-text text-muted">Education</small>
                 <select class="form-control" name="education" id="education">
-                    <option selected disabled>Select your college</option>
-                    <option></option>
+                    <option selected disabled>Select your Education</option>
+                    <option>B.Tech</option>
                     <option></option>
                 </select>
             </div>
@@ -401,8 +402,8 @@
             <div class="form-group">
                 <small id="helpId" class="form-text text-muted">Company</small>
                 <select class="form-control" name="company" id="company">
-                    <option selected disabled>Select your college</option>
-                    <option></option>
+                    <option selected disabled>Select your company</option>
+                    <option>Hidden Brains</option>
                     <option></option>
                 </select>
             </div>
@@ -417,7 +418,7 @@
             <!-- favourite movie multi-select -->
             <div class="form-group">
                 <small id="helpId" class="form-text text-muted">Favourite Movies</small>
-                <select multiple class="form-control" name="fav-movie" id="fav-movie">
+                <select multiple class="form-control" name="fav-movies" id="fav-movies">
                     <option disabled>Select Favourite Movies</option>
                     <option>Avenger</option>
                     <option>Black Panther</option>
@@ -428,26 +429,31 @@
             <!-- hobbies checkbox -->
             <div class="form-check-inline">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" name="hobbies" id="" value="">
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" id="" value="cricket">
                     Cricket
                 </label>
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" name="hobbies" id="" value="">
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" id="" value="singing">
                     Singing
                 </label>
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" name="hobbies" id="" value="">
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" id="" value="dancing">
                     Dancing
                 </label>
             </div>
             <div class="form-check-inline">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" name="hobbies" id="" value="">
+                    <input type="checkbox" class="form-check-input" name="hobbies[]" id="" value="reading">
                     Reading
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <label for="hobbies[]" class="error" style="display:none; text-align: right;"></label>
                 </label>
             </div>
 

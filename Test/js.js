@@ -25,7 +25,65 @@ $(() => {
     $(".val-sal").text("Per Annum : " + $(".salary").slider("value") + "K");
 
     // favourite movie multi-select
-    $("#fav-movie").select2({
+    $("#fav-movies").select2({
         minimumSelectionLength: 2
     });
+
+
+    // form validation
+    $("form").validate({
+        rules: {
+            firstname: "required",
+            lastname: "required",
+            mobile: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            url: {
+                required: true,
+                url: true
+            },
+            gender: "required",
+            country: "required",
+            state: "required",
+            city: "required",
+            dob: "required",
+            college: "required",
+            education: "required",
+            company: "required",
+            salary: "required",
+            "fav-movies": "required",
+            "hobbies[]": "required",
+            check: "required",
+            selectbox: "required"
+        },
+        submitHandler: function (form) {
+            var formData = new FormData(form);
+            storeData(form);
+            return false;
+        }
+    });
+
+    // on submitting the form
+    function storeData(form) {
+        // e.preventDefault();
+        var array = $("form").serializeArray();
+        var json = {};
+        $.each(array, function () {
+            json[this.name] = this.value || "";
+        });
+
+        // store to local storage
+        if (localStorage.getItem("form-data") === null) {
+            var formData = [];
+            formData.push(json);
+            localStorage.setItem("form-data", JSON.stringify(formData));            // localStorage.setItem('added-items', JSON.stringify(json));
+        }
+        else {
+            var formData = JSON.parse(localStorage.getItem('form-data'));
+            formData.push(json);
+            localStorage.setItem("form-data", JSON.stringify(formData));            // localStorage.setItem('added-items', JSON.stringify(json));
+        }
+    };
 })

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 780px;
+}
+.container button{
+    margin: 1.5em 0;
+    padding: 10px 2em;
+}
+.container form input[type="radio"]{
+    margin: 0 1em;
+    padding: 10px;
+}
+.error{
+    padding-left: 1em;
+    color: red;
+    font-size: 0.8em;
+}
+
+/* Listing CSS */
+.owl-carousel img{
+    height: 30vh;
+}
+.filters form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filters form div{
+    margin: 0 1em;
+}
+.filters form .button{
+    padding: 8px 8px 2px 8px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.filters form .button:hover{
+    background-color: #ddd;
+}
+.listing table th{
+    font-size: 0.8em;
+}
+.delete-item{
+    cursor: pointer;
+}
